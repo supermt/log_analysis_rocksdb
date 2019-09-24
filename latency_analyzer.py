@@ -12,7 +12,7 @@ def Average(lst):
 
 
 
-data = open('run_log_read_only.txt', 'r')
+data = open('run_log_large.txt', 'r')
 line = data.readline()
 max_key = 0
 min_key = 0xffffffffffffffff
