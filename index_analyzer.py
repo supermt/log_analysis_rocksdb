@@ -38,9 +38,9 @@ d = sorted(d.items(), key = lambda kv:(kv[1], kv[0]))
 xs=[]
 ys=[]
 for entry in d:
-    xs.append(entry[0])
-    ys.append(entry[1])
-
+    if entry[1] >= 150000000000000L:
+        xs.append(entry[0])
+        ys.append(entry[1])
 
 fig, axs = plt.subplots(2, 5)
 
@@ -66,5 +66,7 @@ for row in range(2):
 
 # y_x_pair = OrderedDict(sorted(d.items(), key=lambda x: x[1]))
 # plt.scatter(xs[start:start+window],ys[start:start+window])
+
+# plt.plot(xs,ys)
 
 plt.show()
